@@ -110,26 +110,26 @@ const stageList = stages.map((name, index) => ({
     genres: [genres[index % genres.length]]
 }));
 
-console.log("data created");
+console.log("data created\n\n");
 
 let start = performance.now();
 console.log(findArtistIndex(artistList, "artiste3"));
 let end = performance.now();
-console.log(`findArtistIndex took ${end - start} milliseconds`);
+console.log(`findArtistIndex took ${end - start} milliseconds\n`);
 
 start = performance.now();
 console.log(findArtistIndexOpti(artistList, "artiste3"));
 end = performance.now();
-console.log(`findArtistIndexOpti took ${end - start} milliseconds`);
+console.log(`findArtistIndexOpti took ${end - start} milliseconds\n\n`);
 
 
 
 start = performance.now();
 assignStages(artistList, stageList);
 end = performance.now();
-console.log(`assignStages took ${end - start} milliseconds`);
+console.log(`assignStages took ${end - start} milliseconds\n`);
 
 start = performance.now();
 assignStagesOpti(artistList, stageList);
 end = performance.now();
-console.log(`assignStagesOpti took ${end - start} milliseconds`);
+console.log(`assignStagesOpti took ${end - start} milliseconds\n\n`);
